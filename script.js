@@ -34,14 +34,17 @@ $(document).ready(function(){
     
     for (var i=0; i<following.length; i++){
       var url2 = 'https://api.twitch.tv/kraken/streams' + following[i] + '/?callback=?';
+
       $.getJSON(url2).done(function(data3){
         var logo;
         var status;
         var name;
+
         if (data3.error){
           logo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeF9yiuu03BNOBVpXsVp2VQIpBSTPdLKWGuB3AI-jm5x9G74bX1g";
           name = data3.message;
           status = data3.error;
+
           $("#followerInfo").prepend("<div class='row'>" + "<div class='col-md-4'>" + "<img src='" + logo + "'>" + "</div>" + "<div class='col-md-4'>" + name + "</div>" + "<div class='col-md-4'>" + status + "</div></div>");
         }
         if (data3.stream===null {
