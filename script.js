@@ -23,6 +23,14 @@ $(document).ready(function(){
     following.push('comster404');
     following.push('brunofin');
     following.push('ESL_SC2');
+    following.push('ESL_SC2');
+    following.push('OgamingSC2');
+    following.push('cretetion');
+    following.push('freecodecamp');
+    following.push('storbeck');
+    following.push('habathcx');
+    following.push('RobotCaleb');
+    following.push('noobs2ninjas');
     
     for (var i=0; i<following.length; i++){
       var url2 = 'https://api.twitch.tv/kraken/streams' + following[i] + '/?callback=?';
@@ -60,7 +68,7 @@ $(document).ready(function(){
 
         var name = data5.stream.channel.display_name;
         var status = data4.stream.channel.status;
-        $("#followerInfo").prepend("<div class='row'>" + "<div class='col-md-4'>" + "<img src='" + logo + "'>" + "</div>" + "<div class='col-md-4'>" + name + "</div>" + "<div class='col-md-4'>" + status + "</div></div>");        
+        $("#followerInfo").prepend("<div class='row'>" + "<div class='col-md-4'>" + "<img src='" + logo + "'>" + "</div>" + "<div class='col-md-4'>" + name + "</div>" + "<div class='col-md-4'>" + status + "</div></div>");
       });
     });
   }
