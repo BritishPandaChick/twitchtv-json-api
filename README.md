@@ -1,11 +1,16 @@
 # Twitch TV JSON API
-Free Code Camp Intermediate Project Twitch TV JSON API. Made with HTML, CSS, JavaScript, and jQuery.
+freecodecamp intermediate project and one of the legacy projects
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- jQuery
 
 ## Instructions
-Clone or download zip file. Open index.html file in your browser.
-
-## Contributing
-This repository is the starter code featured in Dylan Israel's YouTube videos. Therefore, we most likely will not accept pull requests.
+1. Clone or download zip file. 
+2. Open index.html file in your browser.
 
 ## Acknowledgements
 * Dylan Israel
+* freecodecamp
